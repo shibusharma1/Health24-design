@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Health24 - Peace of Mind</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-color: #2c7be5;
+        --secondary-color: #0b378a;
+        --text-dark: #1c1c2d;
+        --text-muted: #6c757d;
+        --bg-light: #f0f5fb;
+        --bg-lighter: #dfe8f1;
+        --white: #ffffff;
+      }
+
+      body {
+        background: linear-gradient(
+          to bottom,
+          var(--bg-light),
+          var(--bg-lighter)
+        );
+        font-family: "Segoe UI", sans-serif;
+        color: var(--text-dark);
+      }
+
+
+    .navbar-custom {
+      background: linear-gradient(to right, #eaf0fa, #f4f9ff);
+      position: relative;
+      padding: 1rem 2rem;
+    }
+
+    .navbar-shape {
+      background: white;
+      clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+
+      /* clip-path: polygon(0% 0%, 90% 0%, 100% 90%, 0% 100%); */
+      padding: 0.5rem 2rem;
+      margin-top: -20px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    .nav-link {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+    }
+      .btn-login {
+        background-color: var(--primary-color);
+        color: var(--white);
+        font-weight: 600;
+        border-radius: 30px;
+        padding: 6px 20px;
+      }
+
+      .hero-section {
+        padding: 4rem 2rem;
+      }
+
+      .hero-text h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: var(--text-dark);
+      }
+
+      .hero-text p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: var(--text-muted);
+      }
+
+      .btn-shop {
+        background-color: var(--primary-color);
+        border-radius: 30px;
+        padding: 10px 24px;
+        color: var(--white);
+        font-weight: 600;
+      }
+
+      .btn-download {
+        border: 2px solid var(--primary-color);
+        border-radius: 30px;
+        padding: 10px 24px;
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-left: 1rem;
+      }
+
+      .carousel-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .carousel-item img {
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .carousel-img-wrapper {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .carousel-img-wrapper div {
+        overflow: hidden;
+        border-radius: 60% / 50%;
+      }
+
+      .carousel-img-wrapper div:nth-child(1) {
+        width: 100px;
+        height: 180px;
+      }
+      .carousel-img-wrapper div:nth-child(2) {
+        width: 130px;
+        height: 240px;
+      }
+      .carousel-img-wrapper div:nth-child(3) {
+        width: 100px;
+        height: 180px;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="https://img.icons8.com/ios-filled/50/2c7be5/health-graph.png"
+              alt="logo"
+            />
+            health24
+          </a>
+          <!-- <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav gap-4 nav-list">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">App</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div> -->
+            <div class="navbar-shape">
+    <ul class="nav gap-4">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">App</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    </ul>
+  </div>
+          <a class="btn btn-login">Login</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <!-- <div class="container-fluid hero-section"> -->
+      <div class="row align-items-center vh-100 px-5">
+        <div class="col-md-6 hero-text">
+          <h1>Peace of Mind for Your <br />Loved Ones</h1>
+          <p>
+            Empowering families to keep their elderly safe with <br />
+            advance GPS tracking devices. Reliable. Discreet. Easy to use.
+          </p>
+          <div class="mt-4">
+            <a href="#" class="btn btn-shop">Shop Now</a>
+            <a href="#" class="btn btn-download">Download App</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-img-wrapper">
+                  <div><img src="test.jpg" alt="img1" /></div>
+                  <div><img src="test.jpg" alt="img2" /></div>
+                  <div><img src="test.jpg" alt="img3" /></div>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Centric Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --bg-light: #f8f9fa;
+      --card-radius: 20px;
+      --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --text-dark: #333;
+      --text-muted: #6c757d;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-dark);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .product-card {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .product-info {
+        flex: 1;
+      }
+    }
+
+    .product-card img {
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .product-info h5 {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+      color: var(--text-muted);
+    }
+
+    .product-price {
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .price-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .price-btn-group {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="section-title">
+      <h2 class="fw-bold">Our Health Centric Products</h2>
+      <p class="text-muted">Choose the perfect device for your loved ones. All devices are easy to use, reliable and support our mobile app for real-time location tracking.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" class="img-fluid" alt="GPS Pendant">
+          <div class="product-info">
+            <h5>GPS Pendant</h5>
+            <p>Lightweight wearable pendant with SOS button, geofencing, and instant location updates.</p>
+            <div class="price-btn-group">
+              <span class="product-price">Rs4,999</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" class="img-fluid" alt="GPS Wristband">
+          <div class="product-info">
+            <h5>GPS Wristband</h5>
+            <p>Lightweight wearable pendant with SOS button, geofencing, and instant location updates.</p>
+            <div class="price-btn-group">
+              <span class="product-price">Rs4,999</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" class="img-fluid" alt="Clip-on GPS Tracker">
+          <div class="product-info">
+            <h5>Clip-on GPS Tracker</h5>
+            <p>Lightweight wearable pendant with SOS button, geofencing, and instant location updates.</p>
+            <div class="price-btn-group">
+              <span class="product-price">Rs4,999</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/100" class="img-fluid" alt="Mini GPS Keychain">
+          <div class="product-info">
+            <h5>Mini GPS Keychain</h5>
+            <p>Lightweight wearable pendant with SOS button, geofencing, and instant location updates.</p>
+            <div class="price-btn-group">
+              <span class="product-price">Rs4,999</span>
+              <button class="btn btn-primary btn-sm">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

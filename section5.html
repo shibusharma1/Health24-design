@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Testimonials</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .testimonial-section {
+      background-color: #eaf2fc;
+      padding: 60px 15px;
+    }
+    .testimonial-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1a1a3d;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .testimonial-card, .text-testimonial-card {
+      border: none;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+    .testimonial-video {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .testimonial-body {
+      padding: 20px;
+      text-align: center;
+    }
+    .stars {
+      color: #007bff;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .customer-card {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .profile-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .customer-info h5 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .customer-info p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    @media (max-width: 991.98px) {
+      .row-cols-lg-custom {
+        flex-direction: column;
+      }
+    }
+
+    /* css for blogs */
+    
+            .blog-section .card {
+                transition: transform 0.3s ease;
+            }
+
+            .blog-section .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .read-more:hover {
+                text-decoration: underline;
+            }
+
+            @media (max-width: 767px) {
+                .blog-section .card-img-top {
+                    height: 150px;
+                }
+            }
+
+    /* css for footer */
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .footer {
+      border-top: 1px solid #eaeaea;
+      padding: 30px 0 10px;
+      background-color: #fff;
+    }
+    .footer .nav-link {
+      color: #333;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+    .footer .nav-link:hover {
+      text-decoration: underline;
+    }
+    .footer .social-icons a {
+      color: #0d6efd;
+      margin-left: 15px;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    .footer .social-icons a:hover {
+      color: #0056b3;
+    }
+    .footer .logo-text {
+      font-weight: 600;
+      color: #000;
+    }
+    .footer small {
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      .footer .d-md-flex {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .footer .social-icons {
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <section class="testimonial-section">
+    <div class="container">
+      <h2 class="testimonial-title">What Our Customers Say</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <!-- Video Testimonial 1 -->
+        <div class="col">
+          <div class="testimonial-card h-100">
+            <img src="https://via.placeholder.com/300x240?text=Video+1" class="testimonial-video" alt="Video Thumbnail">
+            <div class="testimonial-body">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">The wristband is easy for my mother to wear. I can always check on her location, which gives me peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Testimonial 2 -->
+        <div class="col">
+          <div class="testimonial-card h-100">
+            <img src="https://via.placeholder.com/300x240?text=Video+2" class="testimonial-video" alt="Video Thumbnail">
+            <div class="testimonial-body">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">The wristband is easy for my mother to wear. I can always check on her location, which gives me peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Testimonial 1 -->
+        <div class="col">
+          <div class="text-testimonial-card h-100">
+            <div class="customer-card">
+              <img src="https://via.placeholder.com/70" alt="Savannah" class="profile-img">
+              <div class="customer-info">
+                <h5>Savannah Nagri</h5>
+                <p>Nursing Assistant</p>
+              </div>
+            </div>
+            <div class="testimonial-body pt-0">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">The wristband is easy for my mother to wear. I can always check on her location, which gives me peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Testimonial 2 -->
+        <div class="col">
+          <div class="text-testimonial-card h-100">
+            <div class="customer-card">
+              <img src="https://via.placeholder.com/70" alt="Savannah" class="profile-img">
+              <div class="customer-info">
+                <h5>Savannah Nagri</h5>
+                <p>Nursing Assistant</p>
+              </div>
+            </div>
+            <div class="testimonial-body pt-0">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">The wristband is easy for my mother to wear. I can always check on her location, which gives me peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- blogs sections -->
+     <section class="blog-section py-5" style="background-color: #dde5fc;">
+        <div class="container">
+            <h2 class="text-center display-4 fw-bold mb-5">Latest from Our Blog</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- @for ($i = 0; $i < 3; $i++) -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #ffffff; border-radius: 20px; overflow: hidden;">
+                            <div class="card-img-top"
+                                style="background-image: url('https://images.pexels.com/photos/3783348/pexels-photo-3783348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; background-position: center; height: 200px;">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-2" style="color: #2e72e1;">Understanding Personal Safety
+                                    Devices</h5>
+                                <p class="card-text text-muted mb-3">Learn how personal safety devices like the SafeLink 4G
+                                    Pendant can provide peace of mind for you and your loved ones with advanced features.
+                                </p>
+                                <a href="#" class="read-more" style="color: #2e72e1; text-decoration: none;">Read
+                                    More →</a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- @endfor -->
+
+            </div>
+        </div>
+    </section>
+<!-- footer -->
+ <footer class="footer mt-auto">
+  <div class="container">
+    <div class="d-md-flex justify-content-between align-items-center mb-3">
+      <!-- Logo -->
+      <div class="d-flex align-items-center mb-2 mb-md-0">
+        <img src="https://img.icons8.com/ios-filled/25/0d6efd/target.png" alt="logo" class="me-2"/>
+        <span class="logo-text">health24</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav justify-content-center mb-2 mb-md-0">
+        <a class="nav-link" href="#">Privacy Policy</a>
+        <a class="nav-link" href="#">Terms of Service</a>
+        <a class="nav-link" href="#">Support</a>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="social-icons d-flex justify-content-center">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter ms-3"></i></a>
+        <a href="#"><i class="fab fa-instagram ms-3"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center">
+      <small>© 2024 health24. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
