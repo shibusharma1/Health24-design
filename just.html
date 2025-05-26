@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typewriter on Hover</title>
+  <style>
+    #demo {
+      font-family: monospace;
+      white-space: pre;
+      margin-top: 10px;
+      transition: opacity 0.3s ease;
+    }
+
+    #typeBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Typewriter</h1>
+
+<button id="typeBtn">Hover me</button>
+
+<p id="demo"></p>
+
+<script>
+let i = 0;
+let txt = 'Lorem ipsum dummy text blabla.';
+let speed = 50;
+let typingInterval;
+
+const demo = document.getElementById("demo");
+const btn = document.getElementById("typeBtn");
+
+function startTyping() {
+  i = 0;
+  demo.innerHTML = '';
+  typingInterval = setInterval(() => {
+    if (i < txt.length) {
+      demo.innerHTML += txt.charAt(i);
+      i++;
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, speed);
+}
+
+function stopTyping() {
+  clearInterval(typingInterval);
+  demo.innerHTML = '';
+  i = 0;
+}
+
+btn.addEventListener("mouseenter", startTyping);
+btn.addEventListener("mouseleave", stopTyping);
+</script>
+
+</body>
+</html>
